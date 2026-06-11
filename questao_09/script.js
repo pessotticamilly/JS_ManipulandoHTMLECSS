@@ -17,21 +17,13 @@ function renderTable(list) {
                     <td class="${element.completed ? "text-decoration-line-through" : ""}">
                         ${element.title}
                     </td>
-                    <td>
-                        <button class="btn btn-primary ${element.completed ? "disabled" : ""}" type="button" data-index="${index}" data-action="edit">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button class="btn btn-danger ${element.completed ? "disabled" : ""}" type="button" data-index="${index}" data-action="delete">
-                            <i class="bi bi-trash"></i>
-                        </button>
-                    </td>
                 </tr>
             `;
         });
     } else {
         tableBody.innerHTML = tableBody.innerHTML = `
             <tr>
-                <td colspan="3">Nenhuma tarefa pendente!</td>
+                <td colspan="2">Nenhuma tarefa pendente!</td>
             </tr>
         `;
     }
