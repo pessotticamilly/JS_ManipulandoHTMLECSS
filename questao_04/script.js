@@ -1,7 +1,11 @@
 const text = document.getElementById("text");
+const redButton = document.getElementById("red");
 const greenButton = document.getElementById("green");
 const blueButton = document.getElementById("blue");
-const redButton = document.getElementById("red");
+
+redButton.addEventListener("click", () => {
+    text.style.color = "red";
+});
 
 greenButton.addEventListener("click", () => {
     text.style.color = "green";
@@ -9,8 +13,4 @@ greenButton.addEventListener("click", () => {
 
 blueButton.addEventListener("click", () => {
     text.style.color = "blue";
-});
-
-redButton.addEventListener("click", () => {
-    text.style.color = "red";
 });

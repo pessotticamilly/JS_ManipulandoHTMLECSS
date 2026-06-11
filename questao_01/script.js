@@ -3,5 +3,5 @@ const button = document.getElementById("button");
 const text = document.getElementById("text");
 
 button.addEventListener("click", () => {
-    text.innerHTML = `<p>${input.value}</p>` + text.innerHTML;
+    text.textContent = `${input.value}`;
 });

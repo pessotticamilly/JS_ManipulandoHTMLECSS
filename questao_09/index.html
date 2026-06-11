@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questão 01</title>
+    <title>Questão 09</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <h1>Questão 09</h1>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-12">
+                <h1>Questão 09 - Lista dinâmica</h1>
+            </div>
+            <div class="col-12">
+                <div class="row g-3">
+                    <div class="col-5">
+                        <input id="input" class="form-control" type="text" placeholder="Título da tarefa">
+                    </div>
+                    <div class="col-1">
+                        <button id="button" class="btn btn-primary" type="button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Título</th>
+                      <th scope="col">Ação</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBody">
+                    <tr>
+                        <td colspan="3">Nenhuma tarefa pendente!</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

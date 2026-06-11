@@ -1,20 +1,20 @@
 const input = document.getElementById("input");
 const button = document.getElementById("button");
-const text = document.getElementById("text");
+const information = document.getElementById("information");
 
 button.addEventListener("click", () => {
     const inputValue = input.value;
 
     if (inputValue && inputValue.trim()) {
         if(inputValue.includes("@")) {
-            text.textContent = "E-mail válido";
-            text.style.color = "green";
+            information.textContent = "E-mail válido";
+            information.style.color = "green";
         } else {
-            text.textContent = "E-mail inválido";
-            text.style.color = "red";
+            information.textContent = "E-mail inválido";
+            information.style.color = "red";
         };
     } else {
-        text.textContent = "Digite um e-mail";
-        text.style.color = "black";
+        information.textContent = "Digite um e-mail";
+        information.style.color = "black";
     };
 });

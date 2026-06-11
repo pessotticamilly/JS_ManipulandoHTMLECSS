@@ -1,11 +1,14 @@
 const image = document.getElementById("image");
 const button = document.getElementById("button");
 
+let imageNumber = 1;
+
 button.addEventListener("click", () => {
-    if (image.src === "http://127.0.0.1:5500/questao_07/assets/autorretrato.jpg") {
-        image.src = "assets/girassois.jpg"
-    }
-    else {
+    if (imageNumber === 1) {
+        image.src = "assets/girassois.jpg";
+        imageNumber = 2;
+    } else {
         image.src = "assets/autorretrato.jpg"
-    }
-})
+        imageNumber = 1;
+    };
+});

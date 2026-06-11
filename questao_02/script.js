@@ -3,11 +3,11 @@ const button = document.getElementById("button");
 const text = document.getElementById("text");
 
 button.addEventListener("click", () => {
-    let name = input.value;
+    let inputValue = input.value;
 
-    if (name) {
-        text.textContent = `Bem vindo, ${name}!`;
+    if (inputValue && inputValue.trim()) {
+        text.textContent = `Bem vindo, ${inputValue}!`;
     } else {
-        text.textContent = `Digite seu nome`;
-    }
+        text.textContent = `Digite um nome`;
+    };
 });
