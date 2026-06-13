@@ -2,13 +2,13 @@ const div = document.getElementById("div");
 const widthInput = document.getElementById("widthInput"); 
 const heightInput = document.getElementById("heightInput"); 
 
-widthInput.addEventListener("change", () => {
+widthInput.addEventListener("input", () => {
     const width = widthInput.value;
     div.style.width = width + "px"; 
 });
 
-heightInput.addEventListener("change", () => {
-    const height = heiheightInputht.value;
+heightInput.addEventListener("input", () => {
+    const height = heightInput.value;
     div.style.height = height + "px";
 });
 
