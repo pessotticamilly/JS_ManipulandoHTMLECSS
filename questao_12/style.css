@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+body .bi-brightness-high-fill {
+    color: yellow;
+}
+
+body .bi-moon-fill {
+    color: grey;
+}
+
+.dark-mode {
+    background-color: #212529;
+    color: white;
+}
+
+.dark-mode .bi-brightness-high-fill {
+    color: grey;
+}
+
+.dark-mode .bi-moon-fill {
+    color: skyblue;
+}
