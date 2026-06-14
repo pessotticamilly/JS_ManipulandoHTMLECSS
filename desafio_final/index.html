@@ -10,13 +10,101 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <div class="container d-flex justify-content-center">
-        <div class="row g-3">
-            <div class="col-12">
-                <h1>Desafio Final - Painel de Personalização</h1>
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Texto</h3>
+                        <div class="mb-3">
+                            <label class="form-label">Tamanho da fonte</label>
+                            <div class="input-group">
+                                <button id="decreaseFontSizeButton" class="btn btn-outline-secondary">-</button>
+                                <input id="fontSizeInput" type="number" class="form-control text-center" value="16" min="8" max="72">
+                                <button id="increaseFontSizeButton" class="btn btn-outline-secondary">+</button>
+                                <span class="input-group-text">px</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="fontFamilySelect" class="form-label">Família da fonte</label>
+                            <select id="fontFamilySelect" class="form-select">
+                                <option value="Arial">Arial</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="'Courier New'">Courier New</option>
+                                <option value="Tahoma">Tahoma</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Dimensões e Fundo</h3>
+                        <div class="mb-3">
+                            <label class="form-label">Largura</label>
+                            <div class="input-group">
+                                <button id="decreaseWidthButton" class="btn btn-outline-secondary">-</button>
+                                <input id="widthInput" type="number" class="form-control text-center" value="300">
+                                <button id="increaseWidthButton" class="btn btn-outline-secondary">+</button>
+                                <span class="input-group-text">px</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Altura</label>
+                            <div class="input-group">
+                                <button id="decreaseHeightButton" class="btn btn-outline-secondary">-</button>
+                                <input id="heightInput" type="number" class="form-control text-center" value="200">
+                                <button id="increaseHeightButton" class="btn btn-outline-secondary">+</button>
+                                <span class="input-group-text">px</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="backgroundColorInput" class="form-label">Cor de fundo</label>
+                            <input id="backgroundColorInput" type="color" class="form-control form-control-color" value="#ffffff">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Borda</h3>
+                        <div class="mb-3">
+                            <label for="borderColorInput" class="form-label">Cor da borda</label>
+                            <input id="borderColorInput" type="color" class="form-control form-control-color" value="#000000">
+                        </div>
+                        <div class="mb-3">
+                            <label for="borderStyleSelect" class="form-label">Tipo da borda</label>
+                            <select id="borderStyleSelect" class="form-select">
+                                <option value="solid">Solid</option>
+                                <option value="dashed">Dashed</option>
+                                <option value="dotted">Dotted</option>
+                                <option value="double">Double</option>
+                                <option value="groove">Groove</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="borderRadiusInput" class="form-label">Arredondamento das bordas</label>
+                            <input id="borderRadiusInput" type="range" class="form-range" min="0" max="100" value="0">
+                            <div class="d-flex justify-content-between">
+                                <span>0%</span>
+                                <span id="borderRadiusValue">0%</span>
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card h-100">
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <div id="previewCard" class="card p-4 text-center">
+                            <h2 id="previewTitle">Título do Cartão</h2>
+                            <p id="previewText">Este é um exemplo de texto dentro do cartão.</p>
+                            <button class="btn btn-primary">Botão de Exemplo</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
 </html>
- 
